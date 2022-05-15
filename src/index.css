@@ -49,6 +49,7 @@ body{
 
 h1, h2, h3, h4, h5{
     font-weight: 500;
+    text-align: center;
 }
 
 h1{
@@ -57,6 +58,7 @@ h1{
 
 section{
     margin-top: 8rem;
+    /* height: 100vh; */
 }
 
 section > h2, section > h5{
@@ -112,6 +114,36 @@ img {
 }
 
 
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.example {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+/* 
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  */
+/* ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.01);
+} */
+
+/* Handle */
+/* ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 12px;
+} */
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}  */
+
+
 /* ======================================= media queries for medium decives */
 
 @media screen and (max-width: 1024px) {
@@ -136,6 +168,9 @@ img {
 
     section{
         margin-top: 2rem;
+    }
+    .sm-none{
+        display: none;
     }
     
 }
