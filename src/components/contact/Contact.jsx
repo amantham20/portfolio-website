@@ -3,8 +3,30 @@ import React from 'react'
 import './contact.css'
 
 import {MdOutlineEmail} from 'react-icons/md'
+import {useRef} from 'react';
+
+import emailjs from 'emailjs-com';
+import {NotificationContainer, NotificationManager} from 'react-notifications';
+import 'react-notifications/lib/notifications.css';
 
 const Contact = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_rh74utw', 'template_kqggvgh', form.current, 'Pe-Zwh0k1h_kB6iSs')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      e.target.reset();
+      NotificationManager.success('', 'Message sent successfully', 3000);
+  };
+
+
+
   return (
     <section id='contact' className='sect'>
       <h5>Get In Touch</h5>
@@ -30,7 +52,7 @@ const Contact = () => {
         </div>
 
         {/* <div className='formarea'> */}
-          <form action="">
+          <form ref={form} onSubmit={sendEmail}>
             <input type="text"  name='name' placeholder='Your Full Name' required/>
             <input type="email" name='email' placeholder='Your Email' required/>
             <textarea name='message' placeholder='Your Message' rows="7" required></textarea>
@@ -38,7 +60,7 @@ const Contact = () => {
           </form>
         {/* </div> */}
 
-        
+        <NotificationContainer/>
 
       </div>
     </section>

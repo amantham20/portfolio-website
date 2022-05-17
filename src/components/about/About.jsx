@@ -11,6 +11,11 @@ import {AiFillProject} from 'react-icons/ai'
 
 
 const About = () => {
+
+  function myFunction() {
+              
+    alert("Thank you for your interest; This part is still under construction come back later : ^ )");
+  }
   return (
     <section className='about sect' id='about'>
       <div className='heading_info'>
@@ -33,7 +38,7 @@ const About = () => {
           
           <p>
           Student by day and developer by night; Currently pursuing a major in Computer Science, and Mathematics and a Minor in Computational Mathematics, Science & Engineering &#40;CMSE&#41;, and 
-          Entrepreneurship & Innovation at Michigan State University. I fell in love with computer science from High School. My main interests include algorithms and computer theory, cloud technology, and 
+          Entrepreneurship & Innovation at Michigan State University. I fell in love with computer science since High School. My main interests include algorithms and computer theory, cloud technology, and 
           Machine Learning/Artificial intelligence. I also dabble in other aspects of Engineering, web and mobile development.
           </p>
 
@@ -68,10 +73,15 @@ const About = () => {
               <small>Current Projects</small>
             </artice>
 
-
+            {/* <script>
+              function myFunction() {
+                  alert("Thank you for your interest this part is under construction come back later")
+              }
+            </script> */}
 
           </div>
-            <a href="#contact" className='btn About_Page'>More about me!</a>
+            {/* <a onClick="myFunction()" className='btn About_Page'>More about me!</a> */}
+            <button onClick={myFunction} className='btn About_Page'>More about me!</button>
         </div>
       </div>
 
