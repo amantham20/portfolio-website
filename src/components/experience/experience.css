@@ -23,7 +23,8 @@ h4{
 .experience__container > div:hover{
     background: transparent;
     border-color: var(--color-primary-variant);
-    cursor: default;
+    /* cursor: default;
+     */
 }
 
 .experience__container > div h3 {
@@ -100,5 +101,8 @@ h4{
     }
     .experience__content{
         padding: 1rem;
+    }
+    .scroll__down{
+        display: none;
     }
 }

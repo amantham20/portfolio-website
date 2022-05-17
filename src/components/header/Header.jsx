@@ -6,16 +6,19 @@ import CTA from './CTA'
 // import ME from '../../assets/me.png'
 import HeaderSocials from './HeaderSocials'
 
+import CV  from '../../assets/resume_new.pdf'
+
 
 const Header = () => {
   return (
-   <header>
-    <a href='' target="_blank" className='btn resumebtn sm-none'>Résumé</a>
+   <section id='home' className='sect'>
+   
+         <a href={CV} target="_blank" download className='btn resumebtn sm-none'>Resumé</a>
      <div className='container header__container'>
        {/* <div className='nametag'>
          
        </div> */}
-
+       {/* <section id='home' className='none'></section> */}
        <div className='content_iam_sm lg-md-none'>
            <h1>
            Hey, I am
@@ -30,7 +33,7 @@ const Header = () => {
               <h1 className='b5'>an Engineer</h1>
               <h1 className='b6'>a Gamer</h1>
 
-                <a href='' target="_blank" className='btn'>Résumé</a>
+                <a href={CV} target="_blank" className='btn'>Resumé</a>
 
        </div>
         <div className='content_iam sm-none'>
@@ -94,7 +97,7 @@ const Header = () => {
 
       {/* <CTA /> */}
       <HeaderSocials />
-
+        <a href="#about" className='scroll__down'>Scroll Down</a>
       {/* <div className="me">
         <img src={ME} alt='me'></img>
       </div> */}
@@ -105,7 +108,7 @@ const Header = () => {
 
 
      </div>
-   </header>
+   </section>
   );
 }
 

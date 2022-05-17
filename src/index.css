@@ -24,10 +24,12 @@
     --container-width-lg: 75%;
     --container-width-md: 86%;
     --container-width-sm: 90%;
+    --cursor-status: default;
 }
 
 html {
     scroll-behavior: smooth;
+    cursor:  var(--cursor-status) !important;
 }
 
 body{
@@ -78,6 +80,7 @@ section > h2{
 a{
     color: var(--color-white);
     transition: var(--transition);
+    /* cursor:  var(--cursor-status) !important; */
 }
 
 
@@ -162,8 +165,8 @@ img {
 
 @media screen and (max-width: 600px) {
     .container{
-        width: var(--container-width-sm);
-
+        max-width: var(--container-width-sm) !important;
+        /* width: 90%; */
     }
 
     section{

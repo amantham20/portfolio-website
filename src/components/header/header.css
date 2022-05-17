@@ -1,10 +1,11 @@
-header {
+#home {
     height: 100vh;
     padding-top: 22vh;
     overflow: hidden;
     background: linear-gradient(-45deg, #da5c36, #b43264, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 22s ease infinite;
+    margin-top: 0;
 }
 
 @keyframes gradient {
@@ -25,6 +26,13 @@ header {
     height: 100%;
     position: relative;
 
+}
+
+.none{
+    /* display: none;
+     */
+     max-height: 3px;
+     margin: 0;
 }
 
 
@@ -89,7 +97,7 @@ header {
 
 .top3,
 .bottom3 {
-    color: rgba(255, 255, 255, 0.3) !important;
+    color: rgba(255, 255, 255, 0.4) !important;
     text-align: left;
 
 }
@@ -118,11 +126,22 @@ tr{
     top: 1rem;
     font-size: 15px;
     padding: 0.6rem, 0.75rem;
+    margin-right: 10vw!important;
+}
+
+.scroll__down{
+    position: absolute;
+    right:-2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 
 @media screen and (max-width: 1024px) {
-    header {
+    #home {
         height: 80vh;
         /*  might have to change the vh from 68 to 100 */
     }
@@ -137,7 +156,7 @@ tr{
 
 
 @media screen and (max-width: 600px) {
-    header {
+    #home {
         height: 100vh;
     }
     .header__socials{
@@ -175,7 +194,7 @@ tr{
         /* position: fixed; */
         /* bottom: 2rem; */
     }
-    header{
+    #home{
         padding-top: 17vh;
     }
 
