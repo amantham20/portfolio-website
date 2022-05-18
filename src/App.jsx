@@ -9,6 +9,10 @@ import Footer from './components/footer/Footer'
 
 import CustomCursor from './CustomCursor'
 
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import ProjectsPage from './components/project_page/ProjectsPage'
+import AboutPage from './components/about_page/AboutPage'
+
 
 const App = () => {
   return (
@@ -20,6 +24,12 @@ const App = () => {
         <Experience />
         <Contact />
         <Footer />
+{/* 
+        <Router>
+         <Route path='/aboutme' component={AboutPage}/> 
+         <Route path='/projects' component={ProjectsPage}/>
+        </Router> */}
+
         
 
         

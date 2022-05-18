@@ -119,8 +119,16 @@ h5{
 .About_Page{
     margin-top: 1rem;
     position: relative;
-    left: 50% !important;
-    transform: translate(-50%);
+    /* left: 50% !important; */
+    /* transform: translate(-50%); */
+}
+
+.otherlinks{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    /* margin-top: 2rem; */
 }
 
 @media screen and (max-width: 1800px) {

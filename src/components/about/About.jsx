@@ -9,6 +9,10 @@ import {FaPizzaSlice} from 'react-icons/fa'
 import {AiOutlineProject} from 'react-icons/ai'
 import {AiFillProject} from 'react-icons/ai'
 
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import AboutPage from '../about_page/AboutPage'
+import ProjectsPage from '../project_page/ProjectsPage'
+
 
 const About = () => {
 
@@ -80,8 +84,15 @@ const About = () => {
             </script> */}
 
           </div>
-            {/* <a onClick="myFunction()" className='btn About_Page'>More about me!</a> */}
-            <button onClick={myFunction} className='btn About_Page'>More about me!</button>
+          <div className='otherlinks'>
+            
+            <a onClick="myFunction()" className='btn About_Page'>Projects</a>
+            <a onClick="myFunction()" className='btn About_Page'>More about me!</a>
+             
+             {/* <Route path='/projects' component={ProjectsPage}/> */}
+            {/* </Router> */}
+          </div>
+            {/* <button onClick={myFunction} className='btn About_Page'>More about me!</button> */}
         </div>
       </div>
 
