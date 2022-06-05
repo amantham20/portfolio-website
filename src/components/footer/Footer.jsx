@@ -2,6 +2,8 @@ import React from 'react'
 
 import './footer.css'
 
+import data from '../../assets/version.json'
+
 import {FaInstagram} from 'react-icons/fa'
 import {BsFillHeartFill} from 'react-icons/bs'
 import {GrFacebookOption} from 'react-icons/gr'
@@ -38,7 +40,9 @@ const Footer = () => {
             <div className='build_with'><h5>Built with &nbsp;</h5> <BsFillHeartFill className='icon__end icon__end1'/> <h5> &nbsp; Fueled by&nbsp;</h5><BiCoffee  className='icon__end icon__end2'/></div>
           <div className="footer__copyright">
 
-            <small>&copy; 2022 Aman Dhruva Thamminana</small>
+            <small>&copy; 2022 Aman Dhruva Thamminana</small> <br />
+            <small>v {data.version}</small>
+            
           </div>
           
         </footer>
