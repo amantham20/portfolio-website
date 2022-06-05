@@ -317,6 +317,96 @@ const spring2021 = [
   }
 ];
 
+const HighSchool = [
+  {
+    id: 1,
+    courseName: 'AP Computer Science',
+    credits : '4',
+    Semester: '2019',
+    Projects: [],
+    Content: [],
+    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    tags: ['AP', 'Computer Science', 'Programming'],
+  }, {
+    id: 2,
+    courseName: 'AP Physics',
+    credits : '4',
+    Semester: '2019',
+    Projects: [],
+    Content: [],
+    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    tags: ['AP', 'Physics'],
+  }, {
+    id: 3,
+    courseName: 'AP Calculus',
+    credits : '4',
+    Semester: '2019',
+    Projects: [],
+    Content: [],
+    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    tags: ['Math', 'AP', 'Calculus'],
+  }, {
+    id: 4,
+    courseName: 'Advanced Business',
+    credits : '4',
+    Semester: '2020',
+    Projects: [],
+    Content: [],
+    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    tags: ['Business'],
+  }
+]
+
+const clubsHS = [
+  {
+    id: 1,
+    courseName: 'Computer Science Club',
+    credits : 'Club',
+    Semester: '2018-2020',
+    Projects: [],
+    Content: [],
+    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    tags: ['Computer Science', 'Programming'],
+  }, {
+    id: 2,
+    courseName: 'Electronics Club',
+    credits : 'Club',
+    Semester: '2016-2020',
+    Projects: [],
+    Content: [],
+    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    tags: ['Electronics'],
+  }, {
+    id: 3,
+    courseName: 'FIRST Robotics Club 5509',
+    credits : 'Club',
+    Semester: '2016-2020',
+    Projects: [],
+    Content: [],
+    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    tags: ['Robotics'],
+  },{
+    id: 4,
+    courseName: 'Business Professionals of America',
+    credits : 'Club',
+    Semester: '2020',
+    Projects: [],
+    Content: [],
+    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    tags: ['Business'],
+  },{
+    id: 5,
+    courseName: 'Big Brothers and Big Sisters',
+    credits : 'Club',
+    Semester: '2017-2020',
+    Projects: [],
+    Content: [],
+    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    tags: [],
+  }
+
+]
+
 const temp2 = [
   {
     name: "aman",
@@ -370,6 +460,7 @@ const AboutPage = () => {
         <h3 className="edu">Michigan State University</h3>
         <h2 className='dipolama'>Bachelor of Science in Computer Science and Mathematics</h2>
         
+        <h5>2020-2024</h5>
         <h1 className='date'>Spring 2022</h1>
 
 
@@ -399,7 +490,9 @@ const AboutPage = () => {
               <div className='course' key={index}>
                 <h3>{course.courseName}</h3>
                 <h4 className='centre'>{course.credits} Credits | {course.Semester}</h4>
-                {/* <h4 className='centre'>{course.Semester}</h4> */}
+                {/* TODO: apply the same formating as above to all of the semesters*/}
+                {/* TODO: rethink the design and other content */}
+                {/*  TODO: Add more content*/}
                 <div className='Projects'>
                   {course.Projects.map((y) => <div className='project'>{y}</div>)}
                 </div>
@@ -535,8 +628,60 @@ const AboutPage = () => {
         <br />
         <br />
         <h3 className='edu'>Midland High School</h3>
-        <h4 className='course'>AP computer science</h4>
-        <h5>2019</h5>
+        <h2>High School Diploma</h2>
+        <h5>2016-2020</h5>
+
+        <div className="Courses">
+        {
+          HighSchool.map((course, index) => {
+            return (
+              <div className='course' key={index}>
+                <h3>{course.courseName}</h3>
+                <h4 className='centre'>{course.credits} Credits</h4>
+                <h4 className='centre'>{course.Semester}</h4>
+                <div className='Projects'>
+                  {course.Projects.map((y) => <div className='project'>{y}</div>)}
+                </div>
+                <div className='contents__course'>
+                  {course.Content.map((y) => <div className='content__course'>{y}</div>)}
+                </div>
+                <h4 className='centre'>{course.Desc}</h4>
+                <div className='tags__course'>
+                  {course.tags.map((y) => <div className='tag__course'>#{y}</div>)}
+                </div>
+              </div>
+            )}
+            )
+        }
+        </div>
+        {/* clubs */}
+
+        <div className="Courses">
+        {
+          clubsHS.map((course, index) => {
+            return (
+              <div className='course' key={index}>
+                <h3>{course.courseName}</h3>
+                <h4 className='centre'>{course.credits} Credits</h4>
+                <h4 className='centre'>{course.Semester}</h4>
+                <div className='Projects'>
+                  {course.Projects.map((y) => <div className='project'>{y}</div>)}
+                </div>
+                <div className='contents__course'>
+                  {course.Content.map((y) => <div className='content__course'>{y}</div>)}
+                </div>
+                <h4 className='centre'>{course.Desc}</h4>
+                <div className='tags__course'>
+                  {course.tags.map((y) => <div className='tag__course'>#{y}</div>)}
+                </div>
+              </div>
+            )}
+            )
+        }
+        </div>
+
+
+
       </section>
       <Footer />
     </div>
