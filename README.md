@@ -2,4 +2,4 @@
 
 Credits:
 
-Me, Myself and I
+Me, Myself, and I
