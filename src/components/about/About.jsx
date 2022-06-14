@@ -74,15 +74,15 @@ const About = () => {
           
           <p>
           Student by day and developer by night; Currently pursuing a major in Computer Science, and Mathematics and a Minor in Computational Mathematics, Science & Engineering &#40;CMSE&#41;, and 
-          Entrepreneurship & Innovation at Michigan State University. I fell in love with computer science in High School. My main interests include algorithms and computer theory, cloud technology, and 
-          Machine Learning/Artificial intelligence. I also dabble in other aspects of Engineering, web and mobile development.
+          Entrepreneurship & Innovation at Michigan State University. I fell in love with computers at first sight. My main interests include Algorithms and Computer theory, Cloud technology, and 
+          Machine Learning/Artificial intelligence. I also dabble in other aspects of Business,  Engineering, web and mobile development.
           </p>
 
           <p>
           I'm involved in a variety of extracurriculars on campus, including AI club, Entrepreneurship club, and the Engineering Student Council. </p>
 
           <p>
-            I also love traveling, listening to overplayed music and consuming too much coffee.
+            I also love spontaneously traveling, listening to overplayed music and consuming too much coffee.
           </p>
 
 

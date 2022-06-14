@@ -3,8 +3,330 @@ import Footer from '../footer/Footer'
 
 import './about.css'
 
+import { Tabs } from "./Tabs/Tabs";
 
+import {IoIosConstruct} from 'react-icons/io'
 
+import {AiFillHtml5} from 'react-icons/ai'
+import {FaCss3} from 'react-icons/fa'
+import {FaReact} from 'react-icons/fa'
+import {SiJavascript} from 'react-icons/si'
+import {IoLogoNodejs} from 'react-icons/io'
+import {GrGatsbyjs} from 'react-icons/gr'
+import {SiFlutter} from 'react-icons/si'
+import {FaSwift} from 'react-icons/fa'
+import {SiXcode} from 'react-icons/si'
+import {SiXamarin} from 'react-icons/si'
+import {SiKotlin} from 'react-icons/si'
+
+import {AiFillAndroid} from 'react-icons/ai'
+import {SiIos} from 'react-icons/si'
+import {GrWindows} from 'react-icons/gr'
+import {DiLinux} from 'react-icons/di'
+import {AiFillMacCommand} from 'react-icons/ai'
+import {FcCommandLine} from 'react-icons/fc'
+
+import {AiOutlineGithub} from 'react-icons/ai'
+import {VscAzure} from 'react-icons/vsc'
+import {SiGooglecloud}  from 'react-icons/si'
+import {SiFirebase} from 'react-icons/si'
+import {FaAws} from 'react-icons/fa'
+
+import {SiJava} from 'react-icons/si'
+import {SiCplusplus}  from 'react-icons/si'
+import {FaPython} from 'react-icons/fa'
+import {SiRuby} from 'react-icons/si'
+import {SiCloudera} from 'react-icons/si'
+import {RiComputerLine} from 'react-icons/ri'
+import {SiDart} from 'react-icons/si'
+import {IoLogoSass} from 'react-icons/io'
+import {SiNextdotjs} from 'react-icons/si'
+import {FaBootstrap} from 'react-icons/fa'
+
+import {BiGitBranch} from 'react-icons/bi'
+import {SiReactrouter} from 'react-icons/si'
+import {SiExpress} from 'react-icons/si'
+import {FaVuejs} from 'react-icons/fa'
+import {VscNotebook} from 'react-icons/vsc'
+import {BsMarkdownFill} from 'react-icons/bs'
+import {SiLatex} from 'react-icons/si'
+import {SiAdobexd} from 'react-icons/si'
+import {FiFigma} from   'react-icons/fi'
+import {SiAdobephotoshop} from 'react-icons/si'
+import {GrMysql} from 'react-icons/gr'
+
+import {SiGoland} from 'react-icons/si'
+
+import {SiMicrosoftoffice, SiMicrosoftaccess} from 'react-icons/si'
+import {RiFileExcel2Fill, RiFileWord2Fill, } from 'react-icons/ri'
+
+import {SiRedux}  from 'react-icons/si'
+
+import {FaRust, FaAngular} from 'react-icons/fa'
+
+import {SiElectron, SiVite, SiRubyonrails, SiNumpy, SiSourcegraph, SiGraphql, SiPandas,
+   SiSympy, SiScipy, SiTensorflow, SiPytorch, SiScikitlearn, SiOpencv, SiKubernetes} from 'react-icons/si'
+import {DiMongodb}  from 'react-icons/di'
+
+import {GiProcessor}  from 'react-icons/gi'
+
+import { SiVisualstudio, SiEclipseide, SiVisualstudiocode, SiPycharm } from 'react-icons/si';
+import {DiAtom, DiVim} from 'react-icons/di'
+
+const WebTech = [
+  {
+    label: "HTML",
+    icon: <AiFillHtml5 />,
+  },{
+    label: "CSS",
+    icon: <FaCss3 />,
+  },{
+    label: "JavaScript",
+    icon: <SiJavascript />,
+  },{
+    label: "React",
+    icon: <FaReact />,
+  },{
+    label: "Node",
+    icon: <IoLogoNodejs />,
+  },{
+    label: "Gatsby",
+    icon:  <GrGatsbyjs />
+  },{
+    label: "SASS",
+    icon: <IoLogoSass />,
+  },{
+    label: "Next.js",
+    icon: <SiNextdotjs />,
+  },{
+    label: "Bootstrap",
+    icon: <FaBootstrap />,
+  },{
+    label: "Express.JS",
+    icon: <SiExpress />,
+  },{
+    label: "Vue.JS",
+    icon: <FaVuejs />,
+  },{
+    label: "Go",
+    icon: <SiGoland />,
+  },{
+    label: "Rust",
+    icon: <FaRust />,
+  },{
+    label: "Angular",
+    icon: <FaAngular />,
+  }
+]
+
+const mobileTech = [
+  {
+    label: "React Native",
+    icon: <FaReact />,
+  },{
+    label: "Flutter",
+    icon: <SiFlutter />,
+  },{
+    label: "Xcode",
+    icon: <SiXcode />,
+  },{
+    label: "Swift",
+    icon: <FaSwift />,
+  },{
+    label: "Xamarin",
+    icon: <SiXamarin />,
+  },{
+    label: "koltin",
+    icon: <SiKotlin />,
+  },{
+    label: "Dart",
+    icon: <SiDart />,
+  }
+]
+
+const platformsTech = [
+  {
+    label: "Android",
+    icon: <AiFillAndroid />,
+  },{
+    label: "iOS",
+    icon: <SiIos />,
+  },{
+    label: "Windows",
+    icon: <GrWindows />,
+  },{
+    label: "Linux",
+    icon: <DiLinux />,
+  },{
+    label: "Mac",
+    icon: <AiFillMacCommand />,
+  },{
+    label: "unix",
+    icon: <FcCommandLine />,
+  },{
+    label: "Adobe XD",
+    icon: <SiAdobexd />,
+  },{
+    label: "Figma",
+    icon: <FiFigma />,
+  },{
+    label: "Adobe Photoshop",
+    icon: <SiAdobephotoshop />,
+  }
+]
+
+const FrameworksTech = [
+  {
+    label: "Github",
+    icon: <AiOutlineGithub />,
+  },{
+    label: "Azure",
+    icon: <VscAzure />,
+  },{
+    label: "Google Cloud",
+    icon: <SiGooglecloud />,
+  },{
+    label: "Firebase",
+    icon: <SiFirebase />,
+  },{
+    label: "AWS",
+    icon: <FaAws />,
+  },{
+    label: "Git",
+    icon: <BiGitBranch />,
+  },{
+    label: "React Router",
+    icon: <SiReactrouter />,
+  },{
+    label: "Python Nodebooks",
+    icon: <VscNotebook />,
+  },{
+    label: "Redux",
+    icon: <SiRedux />,
+  },{
+    label: "ELectron",
+    icon: <SiElectron />,
+  },{
+    label: "Vite",
+    icon: <SiVite />,
+  },{
+    label: "Ruby on Rails",
+    icon: <SiRubyonrails />,
+  },{   
+    label: "GraphQl",
+    icon: <SiGraphql />,
+  },{
+    label: "kubernetes",
+    icon: <SiKubernetes />,
+  }
+]
+
+const Codinglanguages =[
+  {
+    label: "Java",
+    icon: <SiJava />,
+  },{
+    label: "C++",
+    icon: <SiCplusplus />,
+  },{
+    label: "Python",
+    icon: <FaPython />,
+  },{
+    label: "Ruby",
+    icon: <SiRuby />,
+  },{
+    label: "C",
+    icon: <SiCloudera />,
+  },{
+    label: "ARMAssembly",
+    icon: <GiProcessor />,
+  },{
+    label: "markdown",
+    icon: <BsMarkdownFill />,
+  },{
+    label: "LaTeX",
+    icon: <SiLatex />,
+  },{
+    label: "SQL",
+    icon: <GrMysql />,
+  },{
+    label: "MongoDB",
+    icon: <DiMongodb />,
+  }
+]
+
+const officeTech = [
+  {
+    label: "Microsoft Office",
+    icon: <SiMicrosoftoffice />,
+  },{
+    label: "Microsoft Access",
+    icon: <SiMicrosoftaccess />,
+  },{
+    label: "Excel (certified)",
+    icon: <RiFileExcel2Fill />,
+  },{
+    label: "Word (certified)",
+    icon: <RiFileWord2Fill />,
+  }
+]
+
+const pythonModules = [
+  {
+    label: "Numpy",
+    icon: <SiNumpy />,
+  },{
+    label: "Matplotlib",
+    icon: <SiSourcegraph />,
+  },{
+    label: "Pandas",
+    icon: <SiPandas />,
+  },{
+    label: "SymPy",
+    icon: <SiSympy />,
+  },{
+    label: "SciPy",
+    icon: <SiScipy />,
+  },{
+    label: "TensorFlow",
+    icon: <SiTensorflow />,
+  },{
+ 
+    label: "Pytorch",
+    icon: <SiPytorch />,
+  // },{
+  //   label: "Keras",
+  //   icon: "",
+   },{
+    label: "Scikit-Learn",
+    icon: <SiScikitlearn />,
+  },{
+    label: "opencv",
+    icon: <SiOpencv />,
+  }
+]
+
+const CondingPlatforms = [
+  {
+    label: "Visual Studio",
+    icon: <SiVisualstudio />,
+  },{
+    label: "Eclipse",
+    icon: <SiEclipseide />,
+  },{
+    label: "Visual Studio Code",
+    icon: <SiVisualstudiocode />,
+  },{
+    label: "Atom",
+    icon: <DiAtom />,
+  },{
+    label: "Vim",
+    icon: <DiVim />,
+  },{
+    label: "Pycharm",
+    icon: <SiPycharm />,
+  }
+]
 
 const fall2020 = [
   {
@@ -449,6 +771,7 @@ const temp2 = [
 const AboutPage = () => {
   return (
     <div>
+      <p>Pardon the dust! Still Under Construction!!</p> <IoIosConstruct />
       <section>
         <h1>About</h1>
       </section>
@@ -461,7 +784,7 @@ const AboutPage = () => {
         <h2 className='dipolama'>Bachelor of Science in Computer Science and Mathematics</h2>
         
         <h5>2020-2024</h5>
-        <h1 className='date'>Spring 2022</h1>
+        
 
 
         {/* {
@@ -481,112 +804,285 @@ const AboutPage = () => {
 
             )})
         } */}
+        <div>
+        <Tabs >
 
-
-        <div className="Courses">
-        {
-          spring2022.map((course, index) => {
-            return (
-              <div className='course' key={index}>
-                <h3>{course.courseName}</h3>
-                <h4 className='centre'>{course.credits} Credits | {course.Semester}</h4>
-                {/* TODO: apply the same formating as above to all of the semesters*/}
-                {/* TODO: rethink the design and other content */}
-                {/*  TODO: Add more content*/}
-                <div className='Projects'>
-                  {course.Projects.map((y) => <div className='project'>{y}</div>)}
+        <div label="Spring 2023">
+          <h1 className='date'>Spring 2023</h1>
+          <h3>Upcoming</h3>
+          <div className="Courses">
+          {
+            spring2023.map((course, index) => {
+              return (
+                <div className='course' key={index}>
+                  <h3>{course.courseName}</h3>
+                  <h4 className='centre'>{course.credits} Credits | {course.Semester}</h4>
+                  <div className='Projects'>
+                    {course.Projects.map((y) => <div className='project'>{y}</div>)}
+                  </div>
+                  
+                  <div className='contents__course'>
+                    {course.Content.map((y) => <div className='content__course'>{y}</div>)}
+                  </div>
+                  <h4 className='centre'>{course.Desc}</h4>
+                  <div className='tags__course'>
+                    {course.tags.map((y) => <div className='tag__course'>#{y}</div>)}
+                  </div>
                 </div>
-                
-                <div className='contents__course'>
-                  {course.Content.map((y) => <div className='content__course'>{y}</div>)}
-                </div>
-                <h4 className='centre'>{course.Desc}</h4>
-                <div className='tags__course'>
-                  {course.tags.map((y) => <div className='tag__course'>#{y}</div>)}
-                </div>
-              </div>
-            )}
-            )
-        }
+              )}
+              )
+          }
+          </div>
         </div>
 
-        <h1 className='date'>Fall 2021</h1>
-
-        <div className="Courses">
-        {
-          fall2021.map((course, index) => {
-            return (
-              <div className='course' key={index}>
-                <h3>{course.courseName}</h3>
-                <h4 className='centre'>{course.credits} Credits</h4>
-                <h4 className='centre'>{course.Semester}</h4>
-                <div className='Projects'>
-                  {course.Projects.map((y) => <div className='project'>{y}</div>)}
+        <div label="Fall 2022">
+          <h1 className='date'>Fall 2022</h1>
+          <h3>Upcoming</h3>
+          <div className="Courses">
+          {
+            fall2022.map((course, index) => {
+              return (
+                <div className='course' key={index}>
+                  <h3>{course.courseName}</h3>
+                  <h4 className='centre'>{course.credits} Credits | {course.Semester}</h4>
+                  <div className='Projects'>
+                    {course.Projects.map((y) => <div className='project'>{y}</div>)}
+                  </div>
+                  
+                  <div className='contents__course'>
+                    {course.Content.map((y) => <div className='content__course'>{y}</div>)}
+                  </div>
+                  <h4 className='centre'>{course.Desc}</h4>
+                  <div className='tags__course'>
+                    {course.tags.map((y) => <div className='tag__course'>#{y}</div>)}
+                  </div>
                 </div>
-                <div className='contents__course'>
-                  {course.Content.map((y) => <div className='content__course'>{y}</div>)}
-                </div>
-                <h4 className='centre'>{course.Desc}</h4>
-                <div className='tags__course'>
-                  {course.tags.map((y) => <div className='tag__course'>#{y}</div>)}
-                </div>
-              </div>
-            )}
-            )
-        }
+              )}
+              )
+          }
+          </div>
         </div>
 
-        <h1 className='date'>Spring 2021</h1>
 
-        <div className="Courses">
-        {
-          spring2021.map((course, index) => {
-            return (
-              <div className='course' key={index}>
-                <h3>{course.courseName}</h3>
-                <h4 className='centre'>{course.credits} Credits</h4>
-                <h4 className='centre'>{course.Semester}</h4>
-                <div className='Projects'>
-                  {course.Projects.map((y) => <div className='project'>{y}</div>)}
+        <div label='Spring 2022'>
+          <h1 className='date'>Spring 2022</h1>
+          <div className="Courses">
+          {
+            spring2022.map((course, index) => {
+              return (
+                <div className='course' key={index}>
+                  <h3>{course.courseName}</h3>
+                  <h4 className='centre'>{course.credits} Credits | {course.Semester}</h4>
+                  <div className='Projects'>
+                    {course.Projects.map((y) => <div className='project'>{y}</div>)}
+                  </div>
+                  
+                  <div className='contents__course'>
+                    {course.Content.map((y) => <div className='content__course'>{y}</div>)}
+                  </div>
+                  <h4 className='centre'>{course.Desc}</h4>
+                  <div className='tags__course'>
+                    {course.tags.map((y) => <div className='tag__course'>#{y}</div>)}
+                  </div>
                 </div>
-                <div className='contents__course'>
-                  {course.Content.map((y) => <div className='content__course'>{y}</div>)}
-                </div>
-                <h4 className='centre'>{course.Desc}</h4>
-                <div className='tags__course'>
-                  {course.tags.map((y) => <div className='tag__course'>#{y}</div>)}
-                </div>
-              </div>
-            )}
-            )
-        }
+              )}
+              )
+          }
+          </div>
         </div>
 
-        <h1 className='date'>fall 2020</h1>
-
-        <div className="Courses">
-        {
-          fall2020.map((course, index) => {
-            return (
-              <div className='course' key={index}>
-                <h3>{course.courseName}</h3>
-                <h4 className='centre'>{course.credits} Credits</h4>
-                <h4 className='centre'>{course.Semester}</h4>
-                <div className='Projects'>
-                  {course.Projects.map((y) => <div className='project'>{y}</div>)}
+        <div label='Fall 2021'>
+          <h1 className='date'>Fall 2021</h1>
+          <div className="Courses">
+          {
+            fall2021.map((course, index) => {
+              return (
+                <div className='course' key={index}>
+                  <h3>{course.courseName}</h3>
+                  <h4 className='centre'>{course.credits} Credits | {course.Semester}</h4>
+                  <div className='Projects'>
+                    {course.Projects.map((y) => <div className='project'>{y}</div>)}
+                  </div>
+                  <div className='contents__course'>
+                    {course.Content.map((y) => <div className='content__course'>{y}</div>)}
+                  </div>
+                  <h4 className='centre'>{course.Desc}</h4>
+                  <div className='tags__course'>
+                    {course.tags.map((y) => <div className='tag__course'>#{y}</div>)}
+                  </div>
                 </div>
-                <div className='contents__course'>
-                  {course.Content.map((y) => <div className='content__course'>{y}</div>)}
-                </div>
-                <h4 className='centre'>{course.Desc}</h4>
-                <div className='tags__course'>
-                  {course.tags.map((y) => <div className='tag__course'>#{y}</div>)}
-                </div>
-              </div>
-            )}
-            )
-        }
+              )}
+              )
+          }
+          </div>
         </div>
+
+
+        <div label='Spring 2021'>
+          <h1 className='date'>Spring 2021</h1>
+          <div className="Courses">
+          {
+            spring2021.map((course, index) => {
+              return (
+                <div className='course' key={index}>
+                  <h3>{course.courseName}</h3>
+                  <h4 className='centre'>{course.credits} Credits | {course.Semester}</h4>
+                  <div className='Projects'>
+                    {course.Projects.map((y) => <div className='project'>{y}</div>)}
+                  </div>
+                  <div className='contents__course'>
+                    {course.Content.map((y) => <div className='content__course'>{y}</div>)}
+                  </div>
+                  <h4 className='centre'>{course.Desc}</h4>
+                  <div className='tags__course'>
+                    {course.tags.map((y) => <div className='tag__course'>#{y}</div>)}
+                  </div>
+                </div>
+              )}
+              )
+          }
+          </div>
+        </div>
+        
+        <div label='Fall 2020'>
+          <h1 className='date' >Fall 2020</h1>
+          <div className="Courses">
+          {
+            fall2020.map((course, index) => {
+              return (
+                <div className='course' key={index}>
+                  <h3>{course.courseName}</h3>
+                  <h4 className='centre'>{course.credits} Credits | {course.Semester}</h4>
+                  <div className='Projects'>
+                    {course.Projects.map((y) => <div className='project'>{y}</div>)}
+                  </div>
+                  <div className='contents__course'>
+                    {course.Content.map((y) => <div className='content__course'>{y}</div>)}
+                  </div>
+                  <h4 className='centre'>{course.Desc}</h4>
+                  <div className='tags__course'>
+                    {course.tags.map((y) => <div className='tag__course'>#{y}</div>)}
+                  </div>
+                </div>
+              )}
+              )
+          }
+          </div>
+        </div>
+
+        </Tabs>
+        </div>
+
+
+
+
+        <h1>Tech I have worked with</h1>
+        <h4>Web Techonologies</h4>
+        <div className='technologies'>
+          {
+            WebTech.map((tech, index) => {
+              return(
+                <div className='tech' key={index}>
+                  <h4><span>{tech.icon}</span> {tech.label}</h4>
+                </div>
+              )
+            })
+          }
+        </div>
+
+        <h4>Mobile Techonologies</h4>
+        <div className='technologies'>
+          {
+            mobileTech.map((tech, index) => {
+              return(
+                <div className='tech' key={index}>
+                  <h4><span>{tech.icon}</span> {tech.label}</h4>
+                </div>
+              )
+            })
+          }
+        </div>
+        
+        <h4>Platforms</h4>
+        <div className='technologies'>
+          {
+            platformsTech.map((tech, index) => {
+              return(
+                <div className='tech' key={index}>
+                  <h4><span>{tech.icon}</span> {tech.label}</h4>
+                </div>
+              )
+            })
+          }
+        </div>
+        
+        <h4>Frameworks</h4>
+        <div className='technologies'>
+          {
+            FrameworksTech.map((tech, index) => {
+              return(
+                <div className='tech' key={index}>
+                  <h4><span>{tech.icon}</span> {tech.label}</h4>
+                </div>
+              )
+            })
+          }
+        </div>
+        
+        <h4>Programing Languages</h4>
+        <div className='technologies'>
+          {
+            Codinglanguages.map((tech, index) => {
+              return(
+                <div className='tech' key={index}>
+                  <h4><span>{tech.icon}</span> {tech.label}</h4>
+                </div>
+              )
+            })
+          }
+        </div>
+
+        
+        <h4>Python Libs</h4>
+        <div className='technologies'>
+          {
+            pythonModules.map((tech, index) => {
+              return(
+                <div className='tech' key={index}>
+                  <h4><span>{tech.icon}</span> {tech.label}</h4>
+                </div>
+              )
+            })
+          }
+        </div>
+
+        <h4>IDE's</h4>
+        <div className='technologies'>
+          {
+            CondingPlatforms.map((tech, index) => {
+              return(
+                <div className='tech' key={index}>
+                  <h4><span>{tech.icon}</span> {tech.label}</h4>
+                </div>
+              )
+            })
+          }
+        </div>
+
+        <h4>Other</h4>
+        <div className='technologies'>
+          {
+            officeTech.map((tech, index) => {
+              return(
+                <div className='tech' key={index}>
+                  <h4><span>{tech.icon}</span> {tech.label}</h4>
+                </div>
+              )
+            })
+          }
+        </div>
+
+        
 
         {/* {
           data2.map((item, index) => {
@@ -615,7 +1111,6 @@ const AboutPage = () => {
               </div>)
           })  
         } */}
-        
         {/* <h3 className='course'>2020</h3>
         <h4 className='course'>EGR 100 Intro to Engineering Design</h4>
         <h5>Fall</h5>
@@ -630,32 +1125,44 @@ const AboutPage = () => {
         <h3 className='edu'>Midland High School</h3>
         <h2>High School Diploma</h2>
         <h5>2016-2020</h5>
+        
+        {/* <div>
+          <Tabs>
 
-        <div className="Courses">
-        {
-          HighSchool.map((course, index) => {
-            return (
-              <div className='course' key={index}>
-                <h3>{course.courseName}</h3>
-                <h4 className='centre'>{course.credits} Credits</h4>
-                <h4 className='centre'>{course.Semester}</h4>
-                <div className='Projects'>
-                  {course.Projects.map((y) => <div className='project'>{y}</div>)}
+          </Tabs>
+        </div> */}
+
+        {/* <Tabs> */}
+        {/* <div label="Courses">
+          <h1>Courses</h1>
+          <div className="Courses">
+          {
+            HighSchool.map((course, index) => {
+              return (
+                <div className='course' key={index}>
+                  <h3>{course.courseName}</h3>
+                  <h4 className='centre'>{course.credits} Credits</h4>
+                  <h4 className='centre'>{course.Semester}</h4>
+                  <div className='Projects'>
+                    {course.Projects.map((y) => <div className='project'>{y}</div>)}
+                  </div>
+                  <div className='contents__course'>
+                    {course.Content.map((y) => <div className='content__course'>{y}</div>)}
+                  </div>
+                  <h4 className='centre'>{course.Desc}</h4>
+                  <div className='tags__course'>
+                    {course.tags.map((y) => <div className='tag__course'>#{y}</div>)}
+                  </div>
                 </div>
-                <div className='contents__course'>
-                  {course.Content.map((y) => <div className='content__course'>{y}</div>)}
-                </div>
-                <h4 className='centre'>{course.Desc}</h4>
-                <div className='tags__course'>
-                  {course.tags.map((y) => <div className='tag__course'>#{y}</div>)}
-                </div>
-              </div>
-            )}
-            )
-        }
+              )}
+              )
+          }
+          </div>
         </div>
-        {/* clubs */}
 
+
+        <div label='Clubs'>
+        <h1>Clubs</h1>
         <div className="Courses">
         {
           clubsHS.map((course, index) => {
@@ -679,6 +1186,8 @@ const AboutPage = () => {
             )
         }
         </div>
+        </div> */}
+        {/* </ Tabs> */}
 
 
 
