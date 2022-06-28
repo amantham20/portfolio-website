@@ -73,6 +73,8 @@ import {GiProcessor}  from 'react-icons/gi'
 import { SiVisualstudio, SiEclipseide, SiVisualstudiocode, SiPycharm } from 'react-icons/si';
 import {DiAtom, DiVim} from 'react-icons/di'
 
+import {VscRegex} from 'react-icons/vsc'
+
 const WebTech = [
   {
     label: "HTML",
@@ -252,6 +254,9 @@ const Codinglanguages =[
   },{
     label: "MongoDB",
     icon: <DiMongodb />,
+  },{
+    label: "Regex",
+    icon: <VscRegex />,
   }
 ]
 
@@ -336,7 +341,7 @@ const fall2020 = [
     Semester: 'Fall 2020',
     Projects: ['Mit App Inventor', 'Phone Case'],
     Content: [],
-    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    Desc: "Engineering design process as modeled by team-based, interdisciplinary design projects. Roles of engineers and the contributions of engineering in society. Project management, creativity and design of products and processes to specified outcomes under specified constraints. Introduction to computing tools and physical equipment in support of engineering design.",
     tags: ['Design', 'Engineering', 'Fundamentals'],
   },
   {
@@ -346,7 +351,7 @@ const fall2020 = [
     Semester: 'Fall 2020',
     Projects: [], //need to fill this
     Content: [], // need to fill this
-    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    Desc: "Basic calc didn't have to break a sweat. Limits, continuous functions, derivatives and their applications. Integrals and the fundamental theorem of calculus.",
     tags: ['Math', 'Calculus', 'Engineering'],
   },
   {
@@ -356,7 +361,7 @@ const fall2020 = [
     Semester: 'Fall 2020',
     Projects: [],
     Content: [],
-    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    Desc: "Not so basic Physics. Was Fun tho. Mechanics, Newton's laws, momentum, energy conservation laws, rotational motion, oscillation, gravity, and waves.",
     tags: ['Physics', 'Mechanics', 'Engineering'],
   },
   {
@@ -366,29 +371,19 @@ const fall2020 = [
     Semester: 'Fall 2020',
     Projects: [],
     Content: [],
-    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    tags: ['iOS', 'Design', 'Development', 'Swift', "Xcode", "entrepreneurship"],
+    Desc: "In partnership with Apple, collaborated with other lab members to design and code mobile apps!",
+    tags: ['iOS', 'Design', 'Development', 'Swift', "Xcode", "entrepreneurship", "Apple"],
   }]
 
 const spring2021 = [
-  {
-    id: 1,
-    courseName: 'CSE 232 Intro To Programming II',
-    credits : '4',
-    Semester: 'Spring 2021',
-    Projects: ["Special Characters", "Bank Transactions Platform", "Crypto Trading"],
-    Content: [], //fill this later
-    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    tags: ["C++", "Computer Science", "Programming"],
-  },
   {
     id: 2,
     courseName: 'ESHP 190 The Art of Starting',
     credits : '3',
     Semester: 'Spring 2021',
-    Projects: [],// fill this
-    Content: [],// fill this
-    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    Projects: ["Startup Weekend"],// fill this
+    Content: ["Business Efficiency Analysis"],// fill this
+    Desc: "Learned about the entrepreneurial mindset and the venture creation process. Foundation for getting a venture started, and understanding of what it takes to be an entrepreneur.",
     tags: ["Entrepreneurship", "Business", "Startup"],
   },
   // {
@@ -407,8 +402,18 @@ const spring2021 = [
     Semester: 'Spring 2021',
     Projects: [], // fill this
     Content: [],
-    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    Desc: "My favorite Calc by far. Applications of the integral and methods of integration. Improper integrals. Polar coordinates and parametric curves. Sequences and series. Power series.",
     tags: ["Math", "Calculus", "Engineering"],
+  },
+  {
+    id: 1,
+    courseName: 'CSE 232 Intro To Programming II',
+    credits : '4',
+    Semester: 'Spring 2021',
+    Projects: ["Special Characters kinda like RegEx", "Bank Transactions Platform", "Crypto Trading"],
+    Content: ["C++", "Data Abstraction", "Classes", "Memory Allocation"], //fill this later
+    Desc: "A lot of Coding. Back when C++ was my favorite language. Learned Object-centered design and implementation in C++. Building programs from modules. Data abstraction and classes to implement abstract data types. Static and dynamic memory allocation. Data structure implementation and algorithm efficiency. Lists, tables, stacks, and queues. Templates and generic programming.",
+    tags: ["C++", "Computer Science", "Programming"],
   }]
 
   const clubsFall2020 = [{
@@ -441,7 +446,7 @@ const spring2021 = [
     Semester: 'Fall 2021',
     Projects: [],
     Content: [],
-    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    Desc: "One of my Favorite Classes. Thanks to prof @Amy Haimerl. Learned about creative processes, complex problem solving and innovative entrepreneurship. Examination of successful social, cultural and corporate thinkers and creators. Activities focused on inquiry, observation, experimentation and networking for situational problem solving.",
     tags: ["Creativity", "Entrepreneurship", "Business", "Startup"],
   },{
     id: 12,
@@ -449,18 +454,18 @@ const spring2021 = [
     credits : '4',
     Semester: 'Fall 2021',
     Projects: [], // fill this
-    Content: ["Set Theory"], //fill this later
-    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    Content: ["Set Theory", "Probability"], //fill this later
+    Desc: "Fun CS Proofs Class. Propositional and first order logic. Equivalence and methods of proof. Basics of counting. Set operations, relations, functions. Grammars and finite state automata. Discrete probability. Applications to computer science and engineering.",
     tags: ["Discrete Structures", "Computer Science", "Programming", "Math"],
   },
   {
     id: 13,
-    courseName: 'MTh 234 Calculus III (Multivariable)',
+    courseName: 'MTH 234 Calculus III (Multivariable)',
     credits : '4',
     Semester: 'Fall 2021',
     Projects: [], // fill this
-    Content: [], //fill this later
-    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    Content: ["Vectors", "More Vectors", "A bunch of integrals stacked", "Greens Theorm", "Stokes Theorm"], //fill this later
+    Desc: "A lot of intresting 3D math. Atleast i didn't have to prove anything... yet. Vectors in space. Functions of several variables and partial differentiation. Multiple integrals. Line and surface integrals. Green's and Stokes's theorems.",
     tags: ['Math', 'Calculus', 'Engineering', 'Multivariable', 'Computer Science'],
   },
   {
@@ -469,8 +474,8 @@ const spring2021 = [
     credits : '4',
     Semester: 'Fall 2021',
     Projects: [], // fill this
-    Content: ["Set Theory"], //fill this later
-    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    Content: ["Set Theory", "Proofs using Induction", "Proofs using Contradiction", "Other Proofs..."], //fill this later
+    Desc: "Started solving long proofs. Introduction to mathematical reasoning, basic logic, set theory, integers, natural numbers and induction, basic number theory, real numbers, limits, sequences, series.",
     tags: ['Math', 'Formal Proofs'],
   },{
     id: 15,
@@ -478,9 +483,9 @@ const spring2021 = [
     credits : '4',
     Semester: 'Fall 2021',
     Projects: [], // fill this
-    Content: [], //fill this later
-    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    tags: ['Math', 'Linear Algebra', 'Computer Science', 'Pythion' ,'Math'],
+    Content: ["Vectors", "Linear Transformations", "Steady State", "Matrices!!! A lot of them"], //fill this later
+    Desc: "We can make computers do a bunch of math faster. yaaaaay!!!! Vectors, matrices, linear transformations, inner products, dimension, eigenvalues and eigenvectors. Applications to systems of equations and to geometry.",
+    tags: ['Math', 'Linear Algebra', 'Computer Science', 'Python' ,'Math', "NumPy", "SciPy", "Matplotlib", "SymPy"],
   }]
   
   const workFall2021 =[{
@@ -509,18 +514,18 @@ const spring2021 = [
     courseName: 'CSE 320 Computer Organization and Architecture',
     credits : '3',
     Semester: 'Spring 2022',
-    Projects: ['Game of Life in Assembly', 'Fractals in Assembly'],
+    Projects: ['Game of Life in Assembly', 'Fractals in Assembly', "built an ALU", "built a CPU"],
     Content: ['Circuit Design', 'Microprocessor', 'Assembly Language', 'Computer Architecture'],
-    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    Desc: "Learned about concepts in architecture such as digial electronics, Optimization of Circuits, essential Concepts of Memory Management in C, and Writing Assembly Language Programs.",
     tags: ['ARM Assembly', 'Computer Architecture', 'Computer Science', 'Programming', 'Circuit Design'],
   },{
     id: 19,
     courseName: 'CSE 331 Data Structures and Algorithms',
     credits : '4',
     Semester: 'Spring 2022',
-    Projects: [],// fill this
+    Projects: ["Kadane algorithm", "Moore's Voting algo", "A* search", "Dijkstra's algorithm"],// fill this
     Content: ['Linked Lists', 'Binary Trees', 'Trees', 'Graphs', 'Heaps', 'Hash Tables'], //fill this later
-    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    Desc: "Learned about data structures and algorithms to solve problems. Optimized the algorithms to gain efficiency.", 
     tags: ['Data Structures', 'Algorithms', 'Computer Science', 'Programming'],
   },{
     id: 20,
@@ -528,8 +533,8 @@ const spring2021 = [
     credits : '3',
     Semester: 'Spring 2022',
     Projects: [], // fill this
-    Content: [], //fill this later
-    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    Content: ["Ordinary Differential Equation", "Partial Differential Equation", "Secord and Third order ODE's", "Laplace Transform"], //fill this later
+    Desc: "Solved a lot of long problems. SMH. Separable and exact equations. Linear equations and variation of parameters. Higher order linear equations. Laplace transforms. Systems of first-order linear equations. Introduction to partial differential equations and Fourier series.",
     tags: ['Math', 'Differential Equations'],
   },{
     id: 21,
@@ -537,8 +542,8 @@ const spring2021 = [
     credits : '3',
     Semester: 'Spring 2022',
     Projects: [], // fill this
-    Content: [], //fill this later
-    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    Content: ["Rings", "Groups", "Ideals", "Congruence", "Modular Arithmetic"], //fill this later
+    Desc: "Proved a lot of long proofs. Structure of the integers, congruences, polynomial rings, and ideals. With applications in cryptography.",
     tags: ['Math', 'Abstract Algebra', 'Cryptography'],
   }]
   
@@ -549,7 +554,7 @@ const spring2021 = [
     Semester: 'Fall 2022',
     Projects: [], // fill this
     Content: [], //fill this later
-    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    Desc: "Upcomming Course",
     tags: ['Data Analysis', 'Computer Science', 'Programming'],
   },{
     id: 23,
@@ -558,7 +563,7 @@ const spring2021 = [
     Semester: 'Fall 2022',
     Projects: [],
     Content: [],
-    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    Desc: "Upcomming Course",
     tags: ['Ethics', 'Computer Science', 'Programming'],
   },{
     id: 24,
@@ -567,7 +572,7 @@ const spring2021 = [
     Semester: 'Fall 2022',
     Projects: [],
     Content: [],
-    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    Desc: "Upcomming Course",
     tags: ['Computer Systems', 'Computer Science', 'Programming'], 
   },{
     id: 25,
@@ -576,7 +581,7 @@ const spring2021 = [
     Semester: 'Fall 2022',
     Projects: [],
     Content: [],
-    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    Desc: "Upcomming Course",
     tags: ['Software Development', 'Computer Science', 'Programming'],
   },{
     id: 26,
@@ -585,7 +590,7 @@ const spring2021 = [
     Semester: 'Fall 2022',
     Projects: [],
     Content: [],
-    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    Desc: "Upcomming Course",
     tags: ['Math', 'Abstract Algebra', 'Cryptography'],
 
   },{
@@ -595,8 +600,8 @@ const spring2021 = [
     Semester: 'Fall 2022',
     Projects: [],
     Content: [],
-    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    tags: [],
+    Desc: "Upcomming Course",
+    tags: ["Computer Science", "Statistics", "Probability"],
   }]
   
   const spring2023 = [
@@ -607,7 +612,7 @@ const spring2021 = [
     Semester: 'Spring 2023',
     Projects: [],
     Content: [],
-    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    Desc: "Upcomming Course",
     tags: ['Data Analysis', 'Computer Science', 'Programming'],
   },{
     id: 29,
@@ -616,7 +621,7 @@ const spring2021 = [
     Semester: 'Spring 2023',
     Projects: [],
     Content: [],
-    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    Desc: "Upcomming Course",
     tags: ['Algorithms', 'Computer Science', 'Programming'],
   },{
     id: 30,
@@ -625,7 +630,7 @@ const spring2021 = [
     Semester: 'Spring 2023',
     Projects: [],
     Content: ['Finite Automata', 'Regular Expressions', 'Turing Machines', 'Compilers'],
-    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    Desc: "Upcomming Course",
     tags: ['Computer Science', 'Math', 'Theory of Computation'],
   },{
     id: 31,
@@ -634,10 +639,9 @@ const spring2021 = [
     Semester: 'Spring 2023',
     Projects: [],
     Content: [],
-    Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    Desc: "Upcomming Course",
     tags: ['Math', 'Analysis I', 'Proofs'],
-  }
-];
+  }];
 
 const HighSchool = [
   {
@@ -676,8 +680,7 @@ const HighSchool = [
     Content: [],
     Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     tags: ['Business'],
-  }
-]
+  }]
 
 const clubsHS = [
   {

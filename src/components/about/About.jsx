@@ -20,6 +20,8 @@ import { QuerySnapshot } from '@firebase/firestore'
 
 import { Link } from 'react-router-dom'
 
+import {SiVisualstudiocode, SiXcode, SiGooglechrome, SiPython, SiCplusplus, SiMacos, SiWindows, SiReact, SiFlutter, SiHtml5, SiCss3, SiGithub} from 'react-icons/si'
+
 
 const About = () => {
 
@@ -84,6 +86,15 @@ const About = () => {
           <p>
             I also love spontaneously traveling, listening to overplayed music and consuming too much coffee.
           </p>
+{/* 
+          <h3>My favorite workflow and development enviroments</h3>
+          {/* <div className='about__workflow'>
+          <div> */}
+
+            {/* <SiVisualstudiocode />
+            <SiXcode /> */}
+          {/* </div> */}
+          {/* </div> */}
 
 
           <div className='live_block'><span class="blink_me">Live <span class="dot"></span></span></div>
