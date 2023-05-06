@@ -12,7 +12,6 @@ import NotFound from './components/notfound/NotFound';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Router>
-        {/* <App /> */}
         <Routes>
 
             <Route path='*' element={<NotFound />} />
